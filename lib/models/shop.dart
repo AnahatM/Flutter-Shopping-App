@@ -5,29 +5,32 @@ class Shop extends ChangeNotifier {
   // Products for Sale
   final List<Product> _shop = [
     Product(
-      productName: "Product 1",
+      productName: "Smart Watch",
       productDescription:
-          "This is a placeholder description for Product 1. It includes key features and benefits to attract customers.",
-      productPrice: 100.0,
-      // productImagePath: "assets/images/product1.jpg",
+          "Stay connected, healthy, and active with the Smart Watch. Features include fitness tracking, heart rate monitoring, and more.",
+      productPrice: 399.99,
+      productImagePath: "assets/Smartwatch.png",
     ),
     Product(
-      productName: "Product 2",
-      productDescription: "Description 2",
-      productPrice: 100.0,
-      // productImagePath: "assets/images/product1.jpg",
+      productName: "Wireless Headphones",
+      productDescription:
+          "Experience high-quality sound with these black wireless headphones. Perfect for music lovers and audiophiles.",
+      productPrice: 199.99,
+      productImagePath: "assets/Headphones.png",
     ),
     Product(
-      productName: "Product 3",
-      productDescription: "Description 1",
-      productPrice: 100.0,
-      // productImagePath: "assets/images/product1.jpg",
+      productName: "Android Smartphone",
+      productDescription:
+          "Stay connected with the latest Black Android Smartphone. Features a high-resolution camera, fast processor, and long battery life.",
+      productPrice: 699.99,
+      productImagePath: "assets/Smartphone.png",
     ),
     Product(
-      productName: "Product 4",
-      productDescription: "Description 1",
-      productPrice: 100.0,
-      // productImagePath: "assets/images/product1.jpg",
+      productName: "Digital Camera",
+      productDescription:
+          "Capture stunning photos with the Black Canon EOS Rebel Series DSLR Camera. Ideal for both beginners and professional photographers.",
+      productPrice: 499.99,
+      productImagePath: "assets/Camera.png",
     ),
   ];
 

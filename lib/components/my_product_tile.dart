@@ -79,7 +79,7 @@ class MyProductTile extends StatelessWidget {
                   ),
                   width: double.infinity,
                   padding: const EdgeInsets.all(25),
-                  child: const Icon(Icons.image),
+                  child: Image.asset(product.productImagePath),
                 ),
               ),
 

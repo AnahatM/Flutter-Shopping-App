@@ -123,11 +123,23 @@ class CartPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         elevation: 0,
         centerTitle: true,
-        title: Text("Cart Page"),
+        title: Text("Cart"),
       ),
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: Column(
         children: [
+          const SizedBox(height: 10),
+
+          // Cart Subtitle
+          Center(
+            child: Text(
+              "Check your cart before making a purchase",
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.inversePrimary,
+              ),
+            ),
+          ),
+
           const SizedBox(height: 25),
 
           // Cart List
@@ -152,15 +164,38 @@ class CartPage extends StatelessWidget {
                         final product = cart[index];
 
                         // Return as cart tile UI
-                        return ListTile(
-                          title: Text(product.productName),
-                          subtitle: Text(
-                            product.productPrice.toStringAsFixed(2),
+                        return Container(
+                          margin: const EdgeInsets.symmetric(
+                            vertical: 8.0,
+                            horizontal: 24.0,
                           ),
-                          trailing: IconButton(
-                            icon: const Icon(Icons.remove),
-                            onPressed:
-                                () => removeItemFromCart(context, product),
+                          child: ListTile(
+                            tileColor: Theme.of(context).colorScheme.primary,
+                            contentPadding: EdgeInsets.all(12),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            leading: Image.asset(product.productImagePath),
+                            title: Text(
+                              product.productName,
+                              style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            subtitle: Text(
+                              '\$${product.productPrice.toStringAsFixed(2)}',
+                            ),
+                            trailing: IconButton(
+                              icon: Icon(
+                                Icons.cancel_outlined,
+                                color:
+                                    Theme.of(
+                                      context,
+                                    ).colorScheme.inversePrimary,
+                              ),
+                              onPressed:
+                                  () => removeItemFromCart(context, product),
+                            ),
                           ),
                         );
                       },
@@ -172,7 +207,7 @@ class CartPage extends StatelessWidget {
             padding: const EdgeInsets.all(50.0),
             child: MyButton(
               onTap: () => payButtonPressed(context),
-              child: Text("PAY NOW"),
+              child: Center(child: Text("PAY NOW")),
             ),
           ),
         ],

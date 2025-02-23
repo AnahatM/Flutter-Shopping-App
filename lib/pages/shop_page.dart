@@ -18,7 +18,7 @@ class ShopPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         elevation: 0,
         centerTitle: true,
-        title: Text("Shop Page"),
+        title: Text("Shop"),
         actions: [
           // Cart Icon Button
           IconButton(
@@ -34,7 +34,7 @@ class ShopPage extends StatelessWidget {
       backgroundColor: Theme.of(context).colorScheme.surface,
       body: ListView(
         children: [
-          const SizedBox(height: 25),
+          const SizedBox(height: 10),
 
           // Shop Subtitle
           Center(
@@ -48,7 +48,7 @@ class ShopPage extends StatelessWidget {
 
           // Product List
           SizedBox(
-            height: 550,
+            height: 600,
             child: ListView.builder(
               padding: const EdgeInsets.all(15),
               scrollDirection: Axis.horizontal,
