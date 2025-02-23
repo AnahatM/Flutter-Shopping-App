@@ -13,7 +13,8 @@ class ShopPage extends StatelessWidget {
         elevation: 0,
         title: Text("Shop Page"),
       ),
-      drawer: MyDrawer(),
+      drawer: const MyDrawer(),
+      backgroundColor: Theme.of(context).colorScheme.surface,
     );
   }
 }

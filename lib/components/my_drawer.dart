@@ -49,7 +49,16 @@ class MyDrawer extends StatelessWidget {
           // Exit Shop Tile aligned to bottom of drawer
           Padding(
             padding: const EdgeInsets.only(bottom: 25.0),
-            child: MyListTile(text: "Exit", icon: Icons.logout, onTap: () {}),
+            child: MyListTile(
+              text: "Exit",
+              icon: Icons.logout,
+              onTap:
+                  () => Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    '/intro_page',
+                    (route) => false,
+                  ),
+            ),
           ),
         ],
       ),

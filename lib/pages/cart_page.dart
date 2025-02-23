@@ -12,6 +12,7 @@ class CartPage extends StatelessWidget {
         elevation: 0,
         title: Text("Cart Page"),
       ),
+      backgroundColor: Theme.of(context).colorScheme.surface,
     );
   }
 }
