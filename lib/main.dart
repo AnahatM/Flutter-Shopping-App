@@ -4,7 +4,6 @@ import 'package:minimalist_ecommerce/pages/cart_page.dart';
 import 'package:minimalist_ecommerce/pages/intro_page.dart';
 import 'package:minimalist_ecommerce/pages/settings_page.dart';
 import 'package:minimalist_ecommerce/pages/shop_page.dart';
-import 'package:minimalist_ecommerce/themes/light_mode.dart';
 import 'package:minimalist_ecommerce/themes/theme_provider.dart';
 import 'package:provider/provider.dart';
 
