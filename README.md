@@ -2,6 +2,11 @@
 
 A simple, minimalist e-commerce app made with Flutter. Features include browsing through products and saving and removing items from the cart.
 
+## Screenshots
+
+<img src="images/E-commerceApp1.png" alt="E-commerce App Screenshot 1" width="450px">
+<img src="images/E-commerceApp2.png" alt="E-commerce App Screenshot 2" width="450px">
+
 ## Flutter Resources
 
 A few resources to get you started if this is your first Flutter project:
@@ -15,7 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Credits
 
-The example product images are from Unsplash:
+The example product images used in this project are from Unsplash.com:
 
 - [Apple Watch](https://unsplash.com/photos/apple-watch-at-358-HM-Y497t5CU)
 - [Black Wireless Headphones](https://unsplash.com/photos/black-wireless-headphones-between-apple-keyboard-and-apple-magic-mouse-on-white-surface-YDZPdqv3FcA)
