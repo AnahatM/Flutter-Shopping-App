@@ -2,6 +2,9 @@
 
 A simple, minimalist e-commerce app made with Flutter. Features include browsing through products and saving and removing items from the cart.
 
+![Flutter](https://img.shields.io/badge/-Flutter-05122A?style=flat-square&logo=Flutter&color=2a2e34) 
+![Dart](https://img.shields.io/badge/-Dart-05122A?style=flat-square&logo=Dart&color=2a2e34)
+
 ## Screenshots
 
 <img src="images/E-commerceApp1.png" alt="E-commerce App Screenshot 1" width="450px">
